@@ -1,0 +1,14 @@
+<ion-view view-title="list">
+  <ion-content>
+    <div ng-repeat = "news in newsData" class="list">
+    <a ui-sref="app.detail({id:news.article_id})" class="item item-thumbnail-left">
+      <img src={{news.img}}>
+      <h2>{{news.title}}</h2>
+      <p>{{news.source_date}}</p>
+    </a>
+
+    ...
+
+</div>
+  </ion-content>
+</ion-view>
